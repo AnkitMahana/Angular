@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<alert type="success"></alert>
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+  </div>
+  <div id="table-block" class="container" *ngIf='data && data.length'>
+    <table id="tbl" class="table table-striped table-condensed">
+      <tr id="heading">
+        <th>Time</th>
+        <th>Row Count</th>
+        <th>Process Time(sec)</th>
+        <th>Status</th>
+      </tr>
+      <tr *ngFor='let d of data'>
+        <td>{{d.init_time}}</td>
+        <td>{{d.row_count}}</td>
+        <td>{{d.data_processing_time}}</td>
+        <td>{{d.status}}</td>
+      </tr>
+    </table>
+  </div>
+  
+
