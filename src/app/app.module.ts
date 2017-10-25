@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap';
-import {HttpClientModule} from 'angular/common/http'
+
+//import {DataService} from './data/data.service';
 
 @NgModule({
   declarations: [
