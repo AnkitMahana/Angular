@@ -1,0 +1,17 @@
+#table-block{
+	width: 80%;
+	margin-left: 25%;
+}
+#tbl{
+	width: 60%;
+	alignment-baseline: central;
+	background-color: #ffffff;
+	text-align: center;
+	border-width: 1;
+}
+th{ 
+	text-align: center;
+	background-color: #0099cc;
+	height: 2em;
+	color: #ffffff;
+ }
