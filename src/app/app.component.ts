@@ -11,10 +11,13 @@ import {DataService} from './data/data.service';
 })
 export class AppComponent implements OnInit {
   title = 'Process Monitor';
+  
   constructor(private _dataService : DataService){
   }
   data: IData[];
   ngOnInit() : void {
-  	this.data = this._dataService.getData();
+  	this._dataService.getData()
+  	         .then(data => this.data = data);
+  	 console.log("Data in charts" + this.data);
   }
 }

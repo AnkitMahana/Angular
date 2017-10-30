@@ -4,19 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AlertModule } from 'ngx-bootstrap';
+import { AlertModule } from 'ngx-bootstrap'; // for importing bootstrap classes
 
-//import {DataService} from './data/data.service';
+import { ChartsModule } from 'ng2-charts'; //for importing charts
+import  { BarChartComponent } from './bar-chart.component';
+import  { LineChartComponent } from './line-chart.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BarChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    AlertModule.forRoot()
+    ChartsModule,
+    AlertModule.forRoot() //bootstrap
   ],
   providers: [],
   bootstrap: [AppComponent]
