@@ -18,5 +18,6 @@ export class AppComponent implements OnInit {
   ngOnInit() : void {
   	this._dataService.getData()
   	         .then(data => this.data = data);
+  	 console.log("Data in charts" + this.data);
   }
 }

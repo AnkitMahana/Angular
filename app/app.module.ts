@@ -7,14 +7,15 @@ import { AppComponent } from './app.component';
 import { AlertModule } from 'ngx-bootstrap'; // for importing bootstrap classes
 
 import { ChartsModule } from 'ng2-charts'; //for importing charts
-
-import  { BarChartComponent } from './bar-chart.component'
+import  { BarChartComponent } from './bar-chart.component';
+import  { LineChartComponent } from './line-chart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BarChartComponent
+    BarChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,

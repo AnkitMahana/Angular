@@ -1,12 +1,14 @@
-<div>
+<div class="row" id="bouter">
+  <div class="col-md-6" id="bchart">
   <div style="display: block">
-    <canvas baseChart
+    <canvas id = "cnvs" 
+            baseChart
             [datasets]="barChartData"
             [labels]="barChartLabels"
             [options]="barChartOptions"
             [legend]="barChartLegend"
             [chartType]="barChartType"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+          ></canvas>
   </div>
+</div>
 </div>
